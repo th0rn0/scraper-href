@@ -41,7 +41,7 @@ db.defaults({ urls: [] })
 // Downloads
 
 function downloadFile ( fileURL, downloadDir ) {
-https.get( fileURL, (res) => {
+  https.get( fileURL, (res) => {
       // Handle network errors
       const { statusCode } = res;
       let error;
